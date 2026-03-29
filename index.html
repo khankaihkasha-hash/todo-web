@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Todo Bliss</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="bg"></div>
+
+<div class="app">
+  <h1>📝 <span>Todo Bliss</span></h1>
+  <p class="subtitle">Focus. Finish. Feel good.</p>
+
+  <button class="toggle" onclick="toggleTheme()">🌙 Toggle Theme</button>
+
+  <div class="add">
+    <input type="text" id="task" placeholder="Add a task...">
+    <button onclick="addTask()">+</button>
+  </div>
+
+  <input class="search" id="search" placeholder="🔍 Search tasks" onkeyup="filterTasks()">
+
+  <h3>⚡ Active</h3>
+  <ul id="list"></ul>
+
+  <h3>✅ Completed</h3>
+  <ul id="done"></ul>
+
+  <button class="clear" onclick="clearDone()">Clear Completed</button>
+</div>
+
+<div id="sprinkles"></div>
+
+<script src="script.js"></script>
+</body>
+</html>
